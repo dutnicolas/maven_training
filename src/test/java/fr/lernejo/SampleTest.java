@@ -63,7 +63,6 @@ class SampleTest {
     void factorial_of_negative_5_should_produce_an_exception(){
         int n = -5;
 
-        int factorial = Sample.fact(n);
         Assertions.assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() -> Sample.fact(n));
     }
 
